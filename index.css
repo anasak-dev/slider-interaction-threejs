@@ -48,9 +48,11 @@ body {
   filter: blur(20px);
   transition: opacity 0.3s ease-in;
 }
+
 .line.active .castShadow {
   opacity: 1 !important;
 }
+
 .slick-slider {
   top: 0;
   right: 0;
@@ -65,9 +67,11 @@ body {
 .slider-encrypted .slick-list.draggable {
   clip-path: inset(0 0 0 50%);
 }
+.slick-track,
+.slick-list {
+  height: 100%;
+}
 .slider-encrypted .slick-track {
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   gap: 300px;
   overflow: hidden;
@@ -99,14 +103,13 @@ div.chars {
   clip-path: inset(0 calc(50% - 5px) 0 0);
 }
 .slider-decrypted .slick-track {
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   gap: 300px;
   overflow: hidden;
 }
 .sliderWrapper {
   position: absolute;
+  height: 380px;
   left: 0;
   right: 0;
 }
