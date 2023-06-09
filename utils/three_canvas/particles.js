@@ -1,5 +1,5 @@
 import * as THREE from "three";
-
+import circle from "../../assets/circle.png";
 // Scene
 export default function () {
   const canvasWrapper = document.querySelector(".sliderWrapper");
@@ -8,7 +8,7 @@ export default function () {
 
   //box
   const boxGeo = new THREE.TorusGeometry(2, 0.9, 16, 50);
-  const circleTexture = new THREE.TextureLoader().load("./assets/circle.png");
+  const circleTexture = new THREE.TextureLoader().load(circle);
 
   const pointsGeometry = new THREE.BufferGeometry();
   const pointsCount = 10000;
