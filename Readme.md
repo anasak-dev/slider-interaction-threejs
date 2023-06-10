@@ -1,6 +1,6 @@
 # Slider Interaction with Three JS
 
-![portrait-three-slider](https://github.com/anasak-dev/slider-interaction-threejs/assets/14008858/2adfffd7-1a9c-420f-89ae-df944b9953ac)
+![portrait-three-slider](https://github.com/anasak-dev/slider-interaction-threejs/assets/14008858/fbe638ea-563c-4aa2-a836-139ac22f53a0)
 
 This is a slider interaction which is inspired from this website https://evervault.com/use-cases/file-encryption.
 
