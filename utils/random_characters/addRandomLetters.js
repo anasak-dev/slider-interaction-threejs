@@ -11,15 +11,20 @@ export const addRandomLetters = (item, i) => {
     item.getBoundingClientRect().width,
     item.getBoundingClientRect().height
   );
+  const numOfWordsPerRow = (item.getBoundingClientRect().width / 15).toFixed();
 
   let words = [];
   for (let index = 0; index < container; index++) {
     const randomLetter = alphabets[(alphabets.length * Math.random()) | 0];
     const randomBold = alphabets[((alphabets.length / 4) * Math.random()) | 0];
+    if (index !== 0 && index % numOfWordsPerRow == 0) {
+      words.push("<br>");
+    }
     if (randomLetter == randomBold) {
       words.push(`<strong>${randomLetter}</strong>`);
+    } else {
+      words.push(alphabets[(alphabets.length * Math.random()) | 0]);
     }
-    words.push(alphabets[(alphabets.length * Math.random()) | 0]);
   }
 
   if (i && item.classList.contains("comingToit")) {
