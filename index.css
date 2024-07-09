@@ -113,6 +113,8 @@ div.chars {
   height: 380px;
   left: 0;
   right: 0;
+  top: 60%;
+  transform: translateY(-60%);
 }
 .profile-card:before {
   position: absolute;
